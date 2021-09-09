@@ -1,7 +1,10 @@
 var DETAIL_IMAGE_SELECTOR = '[data-image-role="target"]';
 var DETAIL_TITLE_SELECTOR = '[data-image-role="title"]';
+
 var DETAIL_FRAME_SELECTOR = '[data-image-role="frame"]';
+
 var THUMBNAIL_LINK_SELECTOR = '[data-image-role="trigger"]';
+
 var HIDDEN_DETAIL_CLASS = 'hidden detail';
 var TINY_EFFECT_CLASS = 'is-tiny';
 var ESC_KEY = 27;
@@ -68,12 +71,12 @@ function showDetails(){
     }, 50);
 }
 
-function addKeyPressHandler(){
+function addKeyPressHandler() {
     'use strict';
     document.body.addEventListener('keyup', function(event){
         event.preventDefault();
         console.log(event.keyCode);
-        if (event.keyCode === ESC_KEY) {hideDetails();}
+        if (event.keyCode === ESC_KEY) { hideDetails(); }
     });
 }
 

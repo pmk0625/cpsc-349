@@ -130,7 +130,7 @@ a{
     left: 4px;
     font-family: airstreamregular;
     color: white;
-    text-shadow: rgba(0, 0, 0, 0.9) 10px 20px 7px;
+    text-shadow: rgba(0, 0, 0, 0.9) 5px 10px 4px;
     font-size: 50px;
 }
 
@@ -140,7 +140,7 @@ a{
 
 .hidden-detail .thumbnail-list {
     flex-direction: column;
-    align-items:center;
+    align-items: center;
 }
 
 .hidden-detail .thumbnail-item {
