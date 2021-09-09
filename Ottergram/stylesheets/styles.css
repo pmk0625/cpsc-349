@@ -55,9 +55,9 @@ a{
     flex-direction: column;
 }
 
-.thumbnail-item + .thumbnail-item{
+/*.thumbnail-item + .thumbnail-item{
     margin-top: 10px;
-}
+}*/
 
 .thumbnail-item {
     display: inline-block;
@@ -65,6 +65,12 @@ a{
     max-width: 120px;
     border: 1px solid rgb(100%, 100%, 100%);
     border: 1px solid rgb(100%, 100%, 100%, 0.8);
+
+    /*transition: transform 133ms ease-in-out;*/
+}
+
+.thumbnail-item:hover {
+    transform: scale(1.2);
 }
 
 .thumbnail-list {
@@ -73,7 +79,7 @@ a{
     display: flex;
     justify-content: space-between;
     list-style: none;
-    padding: 0;
+    padding: 20px 0;
 
     white-space: nowrap;
     overflow-x: auto;
@@ -105,6 +111,13 @@ a{
 .detail-image-frame {
     position: relative;
     text-align: center;
+
+    transition: transform 333ms;
+}
+
+.is-tiny {
+    transform: scale(0.001);
+    transition: transform 0ms;
 }
 
 .detail-image{
@@ -119,4 +132,17 @@ a{
     color: white;
     text-shadow: rgba(0, 0, 0, 0.9) 10px 20px 7px;
     font-size: 50px;
+}
+
+.hidden-detail .detail-image-container {
+    display: none;
+}
+
+.hidden-detail .thumbnail-list {
+    flex-direction: column;
+    align-items:center;
+}
+
+.hidden-detail .thumbnail-item {
+    max-width: 80%;
 }
