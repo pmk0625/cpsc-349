@@ -5,7 +5,7 @@ var THUMBNAIL_LINK_SELECTOR = '[data-image-role="trigger"]';
 
 var HIDDEN_DETAIL_CLASS = 'hidden detail';
 var TINY_EFFECT_CLASS = 'is-tiny';
-var ESC_KEY = 27;
+var ESC_KEY = 17;
 
 var slider_img = document.querySelector('.detail-image');
 var images = getThumbnailsArray();
